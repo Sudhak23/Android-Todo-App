@@ -24,7 +24,7 @@
             android:textColor="@android:color/white"
             android:textSize="20dp"
             android:textStyle="bold"
-            app:layout_constraintBottom_toTopOf="@+id/textView2"
+            app:layout_constraintBottom_toTopOf="@+id/txt_discription"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
@@ -33,7 +33,7 @@
 
 
         <TextView
-            android:id="@+id/textView2"
+            android:id="@+id/txt_discription"
             android:layout_width="259dp"
             android:layout_height="45dp"
             android:layout_marginBottom="1dp"
@@ -42,14 +42,14 @@
             android:textColor="@android:color/white"
             android:textSize="30dp"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/imageView"
+            app:layout_constraintEnd_toStartOf="@+id/imgedit"
             app:layout_constraintHorizontal_bias="0.789"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/txt_title"
             tools:text="some long discription" />
 
         <ImageView
-            android:id="@+id/imageView"
+            android:id="@+id/imgedit"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_marginTop="48dp"
