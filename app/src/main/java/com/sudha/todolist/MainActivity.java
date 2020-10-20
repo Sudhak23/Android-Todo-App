@@ -1,6 +1,7 @@
 package com.sudha.todolist;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityOptionsCompat;
@@ -122,9 +123,14 @@ public class MainActivity extends AppCompatActivity {
         intent.putExtra("id",note.getId());
 
         ActivityOptionsCompat optionsCompat=ActivityOptionsCompat.makeSceneTransitionAnimation(this,view, ViewCompat.getTransitionName(view));
-        startActivity(intent,optionsCompat.toBundle());
+        startActivityForResult(intent,1,optionsCompat.toBundle());
     }
 
-
-
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if(requestCode==1){
+            loadNotes();
+        }
+    }
 }
