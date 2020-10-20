@@ -49,7 +49,7 @@ public class NoteHandler extends DatabaseHelper {
         return notes;
     }
 
-    //fetch one single note this useed when we want to edit specific note
+    //fetch one single note this used when we want to edit specific note
 
     public  Note readSingleNote(int id){
         Note note= null ;
